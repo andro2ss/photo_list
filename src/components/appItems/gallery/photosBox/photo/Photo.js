@@ -4,7 +4,6 @@ function Photo({ photo, setModalPhoto }) {
   return (
     <div
       className="photo__box"
-      key={photo.id}
       onClick={() => {
         setModalPhoto(photo);
         document.getElementById("photoModal").classList.add("flex");

@@ -9,11 +9,12 @@ function PhotosBox({ photoList, viewPhotos, setModalPhoto }) {
           return index >= viewPhotos && index < viewPhotos + 3;
         })
         .map((photo) => {
-          console.log(photo);
           const splitUrl = photo.url.split("/");
           photo.correctUrl =
             "http://source.unsplash.com/" + splitUrl[splitUrl.length - 1];
-          return <Photo setModalPhoto={setModalPhoto} photo={photo} />;
+          return (
+            <Photo setModalPhoto={setModalPhoto} photo={photo} key={photo.id} />
+          );
         })}
     </div>
   );

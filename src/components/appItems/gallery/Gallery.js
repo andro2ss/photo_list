@@ -10,7 +10,6 @@ function Gallery({ photoList }) {
   const [modalPhoto, setModalPhoto] = useState({});
 
   const handleChange = (event, value) => {
-    console.log(value);
     setPaginationPage(value);
     if (value === 1) {
       setViewPhotos(0);
