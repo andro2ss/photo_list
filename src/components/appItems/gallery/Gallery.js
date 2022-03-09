@@ -22,14 +22,16 @@ function Gallery({ photoList }) {
     <>
       {photoList.length > 0 && (
         <div className="photo__container">
-          <h1 className="photo__title">Gallery</h1>
+          <h1 className="photo__title animate__animated animate__backInDown">
+            Gallery
+          </h1>
           <PhotosBox
             photoList={photoList}
             viewPhotos={viewPhotos}
             setModalPhoto={setModalPhoto}
           />
           <Pagination
-            className="photo__pagination"
+            className="photo__pagination animate__animated animate__backInUp"
             color="primary"
             count={Math.ceil(photoList.length / 3)}
             page={paginationPage}

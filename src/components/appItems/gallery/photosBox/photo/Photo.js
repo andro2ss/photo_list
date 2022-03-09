@@ -13,7 +13,7 @@ function Photo({ photo, setModalPhoto }) {
       <img
         src={photo.correctUrl}
         alt={`photo made by ${photo.author}`}
-        className="box__photo"
+        className="box__photo animate__animated animate__backInLeft"
       />
     </div>
   );
