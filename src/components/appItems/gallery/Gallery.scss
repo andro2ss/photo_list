@@ -1,0 +1,47 @@
+.photo {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+  }
+
+  &__title {
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &__boxes {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__pagination {
+    margin-top: 2rem;
+    margin-bottom: 80px;
+  }
+
+  &__box {
+    margin: 0.2rem;
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box__photo {
+      max-width: 100%;
+      height: auto;
+      padding: 0.5rem;
+      border: transparent solid 1px;
+      border-radius: 15%;
+
+      &:hover {
+        border: #3d5afe solid 1px;
+        cursor: pointer;
+      }
+    }
+  }
+
+}
