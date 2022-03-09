@@ -11,7 +11,7 @@ function PhotosBox({ photoList, viewPhotos, setModalPhoto }) {
         .map((photo) => {
           const splitUrl = photo.url.split("/");
           photo.correctUrl =
-            "http://source.unsplash.com/" + splitUrl[splitUrl.length - 1];
+            "https://source.unsplash.com/" + splitUrl[splitUrl.length - 1];
           return (
             <Photo setModalPhoto={setModalPhoto} photo={photo} key={photo.id} />
           );
